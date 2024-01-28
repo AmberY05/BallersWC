@@ -12,8 +12,8 @@ https://www.tooplate.com/view/2127-little-fashion
 -----------------------------------------*/
 :root {
   --white-color:                #FFFFFF;
-  --primary-color:              #FF4400;
-  --section-bg-color:           #f0f8ff;
+  --primary-color:              #2115f1;
+  --section-bg-color:           #48b9fd;
   --dark-color:                 #000000;
   --grey-color:                 #d0d1d1;
   --p-color:                    #717275;
@@ -324,6 +324,16 @@ strong {
 }
 
 /*---------------------------------------
+PRODUCT IMAGE
+-----------------------------------------*/
+.responsive-img {
+  width: 100%;   /* Responsive width */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Adjust as needed */
+}
+
+
+/*---------------------------------------
   NAVIGATION               
 -----------------------------------------*/
 .navbar {
@@ -332,10 +342,12 @@ strong {
   top: 0;
   right: 0;
   left: 0;
-  padding: 25px 0;
+  padding: 15px 0;
   z-index: 2;
   will-change: transform;
   transition: transform 300ms linear;
+  display: flex;
+  justify-content: space-between; /
 }
 
 .navbar span, h2 span, h4 span {
@@ -356,10 +368,14 @@ strong {
 
 .navbar-brand {
   color: var(--dark-color);
-  font-size: 24px;
   font-weight: var(--font-weight-light);
-  margin: 0;
-  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 70px; /* Adjust based on your preference */
+  width: auto; 
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -948,8 +964,8 @@ button:focus:not(:focus-visible) {
 
 .view-all {
   text-transform: uppercase;
-  color: var(--p-color);
-  font-size: 13px;
+  color: black;
+  font-size: 20px;
   font-weight: var(--font-weight-bold);
   border-bottom: 2px solid var(--grey-color);
   padding-bottom: 6px;
@@ -1057,6 +1073,19 @@ button:focus:not(:focus-visible) {
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
+@media (max-width: 768px) {
+  .responsive-img {
+      height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-img {
+      height: 100px;
+  }
+}
+
+
 @media screen and (max-width: 1200px) {
   h1 {
     font-size: 62px;
