@@ -662,6 +662,18 @@ PRODUCT IMAGE
   background: var(--white-color);
 }
 
+@media (max-width: 768px) {
+  .slick-custom {
+    min-height: 300px; /* Set a minimum height for small screens */
+  }
+
+  .slick-custom img {
+    width: 100%;
+    object-fit: cover; /* This will cover the area of the container without distorting the aspect ratio */
+    height: 100%; /* Ensure the height of the image matches the container */
+  }
+}
+
 /*---------------------------------------
   CUSTOM CIRCLE IMAGES               
 -----------------------------------------*/
