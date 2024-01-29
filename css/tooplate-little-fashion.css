@@ -492,6 +492,15 @@ PRODUCT IMAGE
   top: 8px;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    padding: 5px 0; /* Reduced padding for smaller screens */
+  }
+
+  .logo {
+    height: 40px; /* Reduced logo size for smaller screens */
+  }}
+
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
