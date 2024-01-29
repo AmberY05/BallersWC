@@ -1049,12 +1049,13 @@ button:focus:not(:focus-visible) {
 .social-icon {
   margin: 0;
   padding: 0;
+  display: flex; /* Align items in a row */
+  justify-content: flex-start; /* Align items to the start */
 }
 
 .social-icon li {
   list-style: none;
-  display: inline-block;
-  vertical-align: top;
+  margin-right: 10px; /* Adjust space between icons */
 }
 
 .social-icon-link {
@@ -1063,7 +1064,6 @@ button:focus:not(:focus-visible) {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 4px;
-  margin-right: 15px;
 }
 
 .social-icon-link:hover {
@@ -1073,6 +1073,20 @@ button:focus:not(:focus-visible) {
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
+@media (max-width: 600px) {
+  .social-icon li {
+    margin-right: 5px; /* Less space on smaller screens */
+  }
+
+  .social-icon-link {
+    font-size: 0.8rem; /* Smaller icons on smaller screens */
+  }
+
+  .contact-info {
+    margin-bottom: 10px; /* Add some space below each contact info section */
+  }
+}
+
 @media (max-width: 768px) {
   .responsive-img {
       height: 150px;
