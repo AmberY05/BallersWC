@@ -533,7 +533,7 @@ PRODUCT IMAGE
 /*---------------------------------------
   SLICK SLIDESHOW               
 -----------------------------------------*/
-@media (min-width: 992px) {
+@media (min-width: 360px) {
   .slick-slideshow {
     height: 100vh;
   }
